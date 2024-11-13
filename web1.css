@@ -1,0 +1,139 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* CSS untuk tampilan kotak-kotak mengambang */
+.container-kotak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.kotak {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(25% - 20px); /* Kotak akan mengisi 25% lebar layar dengan jarak antar kotak */
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.kotak:hover {
+    transform: translateY(-10px); /* Efek mengambang saat di-hover */
+}
+
+.kotak h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.kotak p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.kotak a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kotak a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif agar tampilan tetap bagus pada ukuran layar lebih kecil */
+@media screen and (max-width: 1024px) {
+    .kotak {
+        width: calc(50% - 20px); /* Lebar kotak berubah menjadi 50% di layar lebih kecil */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .kotak {
+        width: 100%; /* Lebar kotak berubah menjadi 100% di layar sangat kecil */
+    }
+}
