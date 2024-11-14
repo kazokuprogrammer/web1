@@ -11,7 +11,7 @@
         <h1>Selamat Datang di Website Pembelajaran</h1>
         <nav>
             <ul>
-                <li><a href="#home">Beranda</a></li>
+                <li><a href="web1.html">Beranda</a></li>
                 <li><a href="#materi">Materi</a></li>
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
