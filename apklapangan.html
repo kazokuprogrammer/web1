@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Kunjungan Lapangan</title>
+    <link rel="stylesheet" href="apklapangan.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Laporan Kunjungan</h1>
+        <form id="reportForm">
+            <div class="form-group">
+                <label for="petugasNama">Nama Petugas:</label>
+                <input type="text" id="petugasNama" name="petugasNama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="namaTempat">Nama Lokasi/Tempat Kunjungan:</label>
+                <input type="text" id="namaTempat" name="namaTempat" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pemilikTempat">Nama Pemilik/Penanggung Jawab:</label>
+                <input type="text" id="pemilikTempat" name="pemilikTempat" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fotoTempat">Foto Lokasi/Kegiatan:</label>
+                <input type="file" id="fotoTempat" name="fotoTempat" accept="image/*" capture="camera" required>
+                <small>Ambil foto dari lokasi.</small>
+            </div>
+
+            <div class="form-group">
+                <label>Lokasi Saat Ini:</label>
+                <p id="location-status">Mencari lokasi...</p>
+                <input type="hidden" id="latitude" name="latitude">
+                <input type="hidden" id="longitude" name="longitude">
+            </div>
+
+            <button type="submit">Kirim Laporan</button>
+        </form>
+    </div>
+
+    <script src="apklapangan.js"></script>
+</body>
+</html>
